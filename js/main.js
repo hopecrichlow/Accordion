@@ -1,9 +1,10 @@
 //IIFE
 (function () {
 
-$('ul').on('click', 'h3', function(event){
+$('ul').on('click', 'h3', function(){
   var section = $(event.target).sibling;
-  $(section).addClass('visable');
+  $(section).removeClass('slide');
+  $(section).addClass('visible')
 });
 
 
