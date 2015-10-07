@@ -5,14 +5,11 @@ $border: 2px solid #4DB4C3;
   margin: 0;
 }
 .accordion{
-  list-style: none;
   margin: 20px;
   width: 550px;
-  height: 550px;
+  list-style: none;
+  border: $border;
   padding: 0;
-  li{
-    border: $border;
-  }
   h3 {
     margin: 0;
     background: #51C2D3;
@@ -27,13 +24,15 @@ $border: 2px solid #4DB4C3;
     height: max-content;
     padding: 20px;
   }
-  .slide{
+  .hidden {
+    transition: all 3s ease;
+    margin: 0;
     height: 0;
     padding: 0;
     overflow: hidden;
-    transition: height 2s ease;
+    
   }
-  .visible{
+  .showing {
     margin: 0;
     height: max-content;
     padding: 20px;
